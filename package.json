@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "cross-env DB_ENV=testing jest --watch --verbose",
-		"start": "nodemon index.js"
+		"server":"nodemon index.js",
+		"start": "node index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -24,6 +25,7 @@
 		"express": "^4.16.4",
 		"knex": "^0.16.3",
 		"nodemon": "^1.18.10",
+		"pg": "^7.8.2",
 		"sqlite3": "^4.0.6"
 	},
 	"devDependencies": {

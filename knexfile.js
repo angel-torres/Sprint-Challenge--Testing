@@ -1,5 +1,5 @@
 // Update with your config settings.
-
+const prodDbConnection = process.env.DATABASE_URL
 module.exports = {
 
   development: {
@@ -23,4 +23,15 @@ module.exports = {
       directory: './data/test-migrations'
     }
   },
+
+  production: {
+    client: 'pg',
+    connection: prodDbConnection
+  },
+  migrations: {
+    directory: './data/migrations'
+  },
+  seeds: {
+    directory: './data/seeds'
+  }
 };
